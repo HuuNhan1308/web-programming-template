@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2dc275",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="App">
+      <header
+        class="header flex justify-between fixed h-[76px] w-[100%] bg-white shadow border-slate-200 border-b-2 px-[32px]"
+      >
+        <!-- Left -->
+        <div class="header-left flex items-center">
+          <!-- Logo -->
+          <a href="#" class="header-logo mr-[32px]">
+            <img
+              src="./assets/img/Ticketbox-Logo.png"
+              alt="Logo"
+              class="h-[44px]"
+            />
+          </a>
+
+          <!-- Search -->
+          <div
+            class="wrapper py-[10px] px-[12px] bg-[#f5f7fc] rounded-[4px] border border-color-transparent caret-primary hover:border-[#afb8c9] focus:border-[#afb8c9] md:w-[372px]"
+          >
+            <div class="header-search flex items-center">
+              <svg width="24" height="24" fill="none" class="search-icon">
+                <path
+                  d="M11 17a6 6 0 100-12 6 6 0 000 12zM18.5 18.5l-3-3"
+                  stroke="#2A2D34"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                value=""
+                class="bg-transparent outline-none w-[100%] ml-2"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="header-right flex items-center">
+          <div class="header-right-btn">
+            <button
+              class="bg-transparent text-primary border border-primary mx-2 px-[24px]"
+            >
+              Create Event
+            </button>
+          </div>
+          <div class="header-right-icon"></div>
+          <div class="header-right-log"></div>
+          <div class="header-right-language"></div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
